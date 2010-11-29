@@ -1,0 +1,13 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".city").click(function(){
+      $("#map").load("map/" + this.id + ".html");
+      $("#description").load("description/" + this.id + ".html");
+    });
+  });
+</script>
+
+<ul>
+  <li><a id="nagasaki" class="city" href="#nagasaki">長崎市</a></li>
+  <li><a id="sasebo" class="city" href="#sasebo">佐世保市</a></li>
+</ul>

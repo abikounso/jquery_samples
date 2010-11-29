@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+  <head>
+    <title>Sample</title>
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".prefecture").click(function(){
+          $("#menu").load(this.id + "/submenu.html");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>サンプル</h1>
+    <h2>メニュー</h2>
+    <div id="menu">
+      <ul>
+        <li><a id="saga" class="prefecture" href="#saga">佐賀</a></li>
+        <li><a id="nagasaki" class="prefecture" href="#nagasaki">長崎</a></li>
+      </ul>
+    </div>
+    
+    <h2>地図</h2>
+    <div id="map"></div>
+
+    <h2>説明</h2>
+    <div id="description"></div>
+  </body>
+</html>

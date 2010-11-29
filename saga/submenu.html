@@ -1,0 +1,13 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".city").click(function(){
+      $("#map").load("map/" + this.id + ".html");
+      $("#description").load("description/" + this.id + ".html");
+    });
+  });
+</script>
+
+<ul>
+  <li><a id="saga" class="city" href="#saga">佐賀市</a></li>
+  <li><a id="imari" class="city" href="#imari">伊万里市</a></li>
+</ul>
